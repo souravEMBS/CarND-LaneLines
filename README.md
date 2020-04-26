@@ -9,33 +9,33 @@ Proposed Solution
 ---
 * Start with an image or frame from a video clip
 
-<img src="https://github.com/souravEMBS/CarND-LaneLines/tree/master/test_images/solidWhiteCurve.jpg" width="480" alt="Combined Image" />
+<img src="test_images/solidWhiteCurve.jpg" width="480" alt="Combined Image" />
 
 * Convert the image to grayscale
 
-<img src="https://github.com/souravEMBS/CarND-LaneLines/tree/master/test_image_output/gray_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
+<img src="test_image_output/gray_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
 
 * Apply Gaussian smoothing
 
-<img src="https://github.com/souravEMBS/CarND-LaneLines/tree/master/test_image_output/gaussian_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
+<img src="test_image_output/gaussian_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
 
 * Apply Canny edge detection function
 
-<img src="https://github.com/souravEMBS/CarND-LaneLines/tree/master/test_image_output/canny_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
+<img src="test_image_output/canny_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
 
 * Create mask on image to define working region
 
-<img src="https://github.com/souravEMBS/CarND-LaneLines/tree/master/test_image_output/mask_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
+<img src="test_image_output/mask_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
 
 * Apply Hough transform on the selected region
 
-<img src="https://github.com/souravEMBS/CarND-LaneLines/tree/master/test_image_output/hough_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
+<img src="test_image_output/hough_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
 
 
 * Draw lines on top of original image
 
 
-<img src="https://github.com/souravEMBS/CarND-LaneLines/tree/master/test_image_output/combo_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
+<img src="test_image_output/combo_solidWhiteCurve.jpg" width="480" alt="Combined Image" />
 
 Most of the steps above are straight forward and can be easily achieved with OpenCV.
 
@@ -75,4 +75,4 @@ Since we expect this solution to work on public roads it is reasonable to assume
 
 To solve the "shakiness" of the lines I added a smoothing parameter and would only allow lines to change by 15% per iteration on the final version.
 
-The results can be seen in this [video](https://github.com/souravEMBS/CarND-LaneLines/tree/master/test_videos_output/solidWhiteRight.mp4)
+The results can be seen in this [video](test_videos_output/solidWhiteRight.mp4)
